@@ -10,6 +10,8 @@ interface NavbarProps {
 const navLinks = [
   { id: "home", label: "Главная" },
   { id: "catalog", label: "Каталог" },
+  { id: "custom", label: "Свой дизайн" },
+  { id: "social", label: "Соц. запросы" },
   { id: "about", label: "О бренде" },
   { id: "reviews", label: "Отзывы" },
   { id: "contacts", label: "Контакты" },

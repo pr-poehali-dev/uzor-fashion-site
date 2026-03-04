@@ -8,8 +8,10 @@ import ContactsPage from "@/pages/ContactsPage";
 import CartPage from "@/pages/CartPage";
 import ProfilePage from "@/pages/ProfilePage";
 import ReviewsPage from "@/pages/ReviewsPage";
+import CustomDesignPage from "@/pages/CustomDesignPage";
+import SocialPage from "@/pages/SocialPage";
 
-type Page = "home" | "catalog" | "about" | "contacts" | "cart" | "profile" | "reviews";
+type Page = "home" | "catalog" | "about" | "contacts" | "cart" | "profile" | "reviews" | "custom" | "social";
 
 function AppContent() {
   const [currentPage, setCurrentPage] = useState<Page>("home");
@@ -28,6 +30,8 @@ function AppContent() {
       case "cart":     return <CartPage onNavigate={navigate} />;
       case "profile":  return <ProfilePage />;
       case "reviews":  return <ReviewsPage />;
+      case "custom":   return <CustomDesignPage />;
+      case "social":   return <SocialPage />;
       default:         return <HomePage onNavigate={navigate} />;
     }
   };
